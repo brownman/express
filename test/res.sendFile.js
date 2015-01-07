@@ -428,7 +428,7 @@ describe('res', function(){
 
       request(app)
       .get('/')
-      .expect(200, '<img src=\'http://www.google.com\'></img>, done);
+      .expect(200, '<img src=\'http://www.google.com\'></img>', done);
     });
 
     it('should 404 for directory without trailing slash', function (done) {
